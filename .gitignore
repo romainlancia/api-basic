@@ -217,5 +217,5 @@ fabric.properties
 # End of https://www.gitignore.io/api/git,node,linux,webstorm,visualstudiocode
 
 .env
-./private.key
-./public.key
+private.pem
+public.pem
