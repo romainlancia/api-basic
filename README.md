@@ -1,5 +1,7 @@
 # SimpleStrongAPI
 
+Get basic api, you can create a new user, update it and authenticate. Try it with [Postman](https://www.getpostman.com/)!
+
 ## Requirements
 
 The API works with
