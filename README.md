@@ -32,7 +32,7 @@ Launch API
 ```
 It will generate a public and private key automatically and also an environment file with a random port you can change anytime
 
-If you want to reset the evn file, then
+If you want to reset the env file, then
 
 ```
  $ yarn generate-env
