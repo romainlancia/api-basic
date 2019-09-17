@@ -14,7 +14,7 @@ The API works with
 Clone the repository
 
 ```
- $ git clone git@github.com:lebroz/SimpleStrongAPI.git
+ $ git clone git@github.com:lebroz/api-basic.git
 ```
 
 Install dependencies using the packet manager `yarn`
