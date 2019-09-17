@@ -1,6 +1,6 @@
 # api-basic
 
-Get basic api, you can create a new user, update it and authenticate. Try it with [Postman](https://www.getpostman.com/)!
+Basic API REST using mongoDB as database. There is an user model implemented, you can perform methods GET, PUT, DELETE, POST on it.
 
 ## Requirements
 
