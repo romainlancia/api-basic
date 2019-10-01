@@ -47,7 +47,7 @@ Then,
 
 ### Environment
 
-When you execute `yarn start` an environment file, `.env`, is generated with a random port you can change anytime
+When you execute `yarn start` an environment file `.env` is generated with a random port you can change anytime
 
 ## Licence
 
