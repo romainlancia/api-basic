@@ -1,6 +1,6 @@
 # api-basic
 
-Basic API REST using mongoDB as database. There is an user model implemented, you can perform methods GET, PUT, DELETE, POST on it.
+Basic API REST running with Docker and MongoDB. There is an user model implemented, you can perform methods GET, PUT, DELETE, POST on it.
 
 ## Requirements
 
@@ -8,6 +8,7 @@ The API works with
 
 * Linux (64bit)
 * [mongoDB](https://www.mongodb.com/fr)
+* [Docker](https://docs.docker.com/)
 
 ## Installation
 
@@ -16,32 +17,46 @@ Clone the repository
 ```
  $ git clone git@github.com:lebroz/api-basic.git
 ```
+## Installation Docker and Docker Compose
 
-Install dependencies using the packet manager `yarn`
+To install `Docker` it's [here](https://docs.docker.com/install/linux/docker-ce/ubuntu/) </br>
+To install `Docker-Compose` it's [here](https://docs.docker.com/compose/install/)
+
+## Usage
+
+### Run the API with Docker
+
+```
+ $ yarn run-docker
+```
+
+### Launch API without Docker (you have to install mongoDB locally)
+
+The port of MongoDB is set to 27017 by default.
+
+First, install the dependencies using the packet manager `yarn`,
 
 ```
  $ yarn
 ```
-
-## Usage
-
-Launch API
+Then,
 
 ```
  $ yarn start
 ```
-It will generate a public and private key automatically and also an environment file with a random port you can change anytime
 
-If you want to reset the env file, then
+### Environment
+
+When you execute `yarn start` an environment file is generated with a random port you can change anytime
+
+### Utils
+
+If you want to remove the env file and the keys,
 
 ```
- $ yarn generate-env
+ $ yarn clean-env-keys
 ```
-If you want to reset the rsa keys, then
 
-```
- $ yarn generate-keys
-```
 ## Licence
 
 [MIT](https://choosealicense.com/licenses/mit/)
