@@ -7,7 +7,7 @@ Basic API REST running with Docker and MongoDB. There is an user model implement
 The API works with
 
 * Linux (64bit)
-* [mongoDB](https://www.mongodb.com/fr)
+* [MongoDB](https://www.mongodb.com/fr)
 * [Docker](https://docs.docker.com/)
 
 ## Installation
