@@ -219,3 +219,4 @@ fabric.properties
 .env
 private.pem
 public.pem
+data/

@@ -4,8 +4,10 @@ const mongoose = require('mongoose')
 const express = require('express')
 const app = express()
 
+const portMongo = 27017
 const port = process.env.PORT || 3000
 const apiName = process.env.API_NAME || 'api'
+const mongoUri = process.env.MONGO_URI || `mongodb://localhost:${portMongo}`
 
 const root = require('./routes')
 const user = require('./routes/users')
@@ -13,7 +15,7 @@ const auth = require('./routes/auth')
 
 // INIT DATABASE
 mongoose
-    .connect(`mongodb://localhost:27017/${apiName}`, { useNewUrlParser: true })
+    .connect(`${mongoUri}/${apiName}`, { useNewUrlParser: true })
     .then(() => console.log(`console: connected to the database ${apiName}`))
     .catch(err => console.error(err))
 

@@ -6,9 +6,13 @@
   "author": "Romain Lancia <romainlancia@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn generate-keys && yarn generate-env && ./node_modules/nodemon/bin/nodemon.js -r dotenv/config index.js",
+    "start": "yarn generate-keys && yarn generate-env && node -r dotenv/config index.js",
+    "dev": "yarn generate-keys && yarn generate-env && ./node_modules/nodemon/bin/nodemon.js -r dotenv/config index.js",
+    "run-docker": "yarn generate-env && docker-compose build && docker-compose up",
+    "start-app-docker": "yarn generate-keys && node -r dotenv/config index.js",
     "generate-keys": "node ./scripts/generate-keys.js",
     "generate-env": "node ./scripts/generate-env.js",
+    "clean-env-keys": "rm -f .env; rm -f private.pem; rm -f public.pem",
     "prettier": "prettier --write \"./**/*.js\"",
     "lint": "eslint *.js"
   },
