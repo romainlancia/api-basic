@@ -47,15 +47,7 @@ Then,
 
 ### Environment
 
-When you execute `yarn start` an environment file is generated with a random port you can change anytime
-
-### Utils
-
-If you want to remove the env file and the keys,
-
-```
- $ yarn clean-env-keys
-```
+When you execute `yarn start` an environment file, `.env`, is generated with a random port you can change anytime
 
 ## Licence
 
