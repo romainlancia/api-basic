@@ -32,7 +32,7 @@ To install `Docker-Compose` it's [here](https://docs.docker.com/compose/install/
 
 ### Launch API without Docker (you have to install mongoDB locally)
 
-The port of MongoDB is set to 27017 by default.
+The port of MongoDB is set to `27017` by default.
 
 First, install the dependencies using the packet manager `yarn`,
 
