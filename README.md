@@ -45,9 +45,60 @@ Then,
  $ yarn start
 ```
 
-### Environment
+## Environment
 
 When you execute `yarn start` an environment file `.env` is generated with a random port you can change anytime
+
+## Route USER
+
+### POST /users
+
+Create an user
+
+```
+{
+ "email": "EMAIL_HERE",
+ "password: "PASSWORD_HERE"
+}
+```
+
+### PUT /users/:id
+
+Update an user</br>
+You need a authorisation token</br>
+Authorization: Bearer ${token}
+
+```
+{
+ "email": "NEW_EMAIL_HERE",
+ "password: "NEW_PASSWORD_HERE"
+}
+```
+
+### DELETE /users/:id
+
+Delete an user</br>
+You need a authorisation token</br>
+Authorization: Bearer ${token}
+
+### GET /users
+
+Retrieve all users</br>
+You need a authorisation token</br>
+Authorization: Bearer ${token}
+
+## Route AUTH
+
+### POST /authenticate
+
+Authenticate an user
+
+```
+{
+ "email": "EMAIL_HERE",
+ "password: "PASSWORD_HERE"
+}
+```
 
 ## Licence
 
