@@ -1,3 +1,4 @@
+// @flow
 const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema({
@@ -7,4 +8,4 @@ const userSchema = new mongoose.Schema({
     site_admin: Boolean,
 })
 
-module.exports.User = mongoose.model('users', userSchema)
+export default mongoose.model('users', userSchema)

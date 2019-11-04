@@ -12,5 +12,7 @@
     <orderEntry type="library" name="@types/joi" level="application" />
     <orderEntry type="library" name="@types/voca" level="application" />
     <orderEntry type="library" name="@types/node-rsa" level="application" />
+    <orderEntry type="library" name="@types/flowjs" level="application" />
+    <orderEntry type="library" name="@types/node" level="application" />
   </component>
 </module>

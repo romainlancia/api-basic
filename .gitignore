@@ -220,3 +220,4 @@ fabric.properties
 private.pem
 public.pem
 data/
+dist/
