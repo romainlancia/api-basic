@@ -12,7 +12,7 @@
     "server": "yarn pre-start && babel-node -r ./node_modules/dotenv/config app.js",
     "server-prod": "yarn pre-start && node -r ./node_modules/dotenv/config ./dist/app",
     "prod": "yarn clean && yarn build && cp private.pem dist && cp public.pem dist && yarn server-prod",
-    "build": "babel ./src --out-dir dist/src && babel app.js --out-dir dist",
+    "build": "yarn pre-start && babel ./src --out-dir dist/src && babel app.js --out-dir dist",
     "clean": "rimraf dist",
     "run-docker": "yarn pre-start && docker-compose build && docker-compose up",
     "generate-keys": "node ./scripts/generate-keys.js",
